@@ -16,7 +16,6 @@ import {
 import NursingDashboard from './components/NursingDashboard';
 import NursingWriter from './components/NursingWriter';
 import RichEditor from './components/RichEditor';
-import CanvasDraw from 'react-canvas-draw';
 
 class ErrorBoundary extends Component<any, any> {
   state = { hasError: false };
