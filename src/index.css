@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "react-quill-new/dist/quill.snow.css";
+
+@theme {
+  --font-gulim: "Gulim", "굴림", "Dotum", "돋움", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print-area, #print-area * {
+    visibility: visible;
+  }
+  #print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+  @page {
+    size: auto;
+    margin: 10mm;
+  }
+}
